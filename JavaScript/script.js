@@ -3,7 +3,7 @@ var button = document.getElementById("monitor"); //  global variable
 function dodaj(number) {
   button.value += number; /// adds digit to the monitor
 }
-
+// RESULT
 function wynik() {
   let screen = document.getElementById("monitor");
   let answer = eval(screen.value);
@@ -22,7 +22,7 @@ function ClearAll() {
 }
 
 function ClearOne() {
-  let screen = document.getElementById("monitor"); // usuwa one mark from monitor
+  let screen = document.getElementById("monitor"); // removes one mark from monitor
   let ClearOne = screen.value;
   if (ClearOne.length > 0) {
     ClearOne = ClearOne.substring(0, ClearOne.length - 1);
@@ -50,7 +50,7 @@ function getoperator(operand) {
 function Decimal() {
   button = document.getElementById("monitor"); // Add "."
   if (!button.value.includes(".")) {
-    // zamiast drugiego ifa może być w jednym (!button.value.includes(".") && button.value != "")
+    // Can be written like this either (!button.value.includes(".") && button.value != "")
     if (button.value != "") {
       button.value += ".";
     }
