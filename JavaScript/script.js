@@ -1,7 +1,7 @@
-var button = document.getElementById("monitor"); // zmienna globalna
+var button = document.getElementById("monitor"); //  global variable
 
 function dodaj(number) {
-  button.value += number; /// dodaje cyfre do wyświetlacza
+  button.value += number; /// adds digit to the monitor
 }
 
 function wynik() {
@@ -10,7 +10,7 @@ function wynik() {
 
   screen.value = answer;
   if (answer == "Infinity") {
-    screen.value = "Nie dziel przez zero!!"; // dzielenie przez zero
+    screen.value = "Nie dziel przez zero!!"; // dividing by 0
   }
 
   // ??
@@ -22,7 +22,7 @@ function ClearAll() {
 }
 
 function ClearOne() {
-  let screen = document.getElementById("monitor"); // usuwa jeden znak z wyświetlacza
+  let screen = document.getElementById("monitor"); // usuwa one mark from monitor
   let ClearOne = screen.value;
   if (ClearOne.length > 0) {
     ClearOne = ClearOne.substring(0, ClearOne.length - 1);
@@ -31,7 +31,7 @@ function ClearOne() {
 }
 
 function getoperator(operand) {
-  let screen = document.getElementById("monitor"); // dodanie operatora[-,+,*,/]   //   box.value = operand; -- taki zapis tez jest prawidłowy
+  let screen = document.getElementById("monitor"); // adds operator[-,+,*,/]   //   box.value = operand; -- can be written like this either
 
   if (operand === "+") {
     screen.value += "+";
