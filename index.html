@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./Css/styles.css" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="calc">
+      <div>
+        <form>
+        <input type="text" id="monitor" placeholder="0" readonly="readonly" disabled size="3" minlength="0" maxlength="12" />
+      </form>
+      </div>
+
+      <div id="buttons">
+        <button type="button" id="clear" onclick="ClearOne('')">C</button>
+        <button type="button" id="clear" onclick="ClearAll()">CA</button>
+        <button >+/-</button>
+        <button type="button" id="operator" onclick="getoperator('/')">/</button>
+        <button type = "button" id="number-2" onclick="dodaj('7')" value="7">7</button>
+        <button type = "button" id="number-2" onclick="dodaj('8')" value="8">8</button>
+        <button type = "button" id="number-2" onclick="dodaj('9')" value="9">9</button>
+        <button type="button" id ="operator" onclick="getoperator('*')">x</button>
+        <button type = "button" id="number-2" onclick="dodaj('4')" value="4">4</button>
+        <button type = "button" id="number-2" onclick="dodaj('5')" value="5">5</button>
+        <button type = "button" id="number-2" onclick="dodaj('6')" value="6">6</button>
+        <button type="button" id ="operator" onclick="getoperator('-')">-</button>
+        <button type= "button" id="number-1" onclick="dodaj('1')" value="1">1</button>
+        <button type = "button" id="number-2" onclick="dodaj('2')" value="2">2</button>
+        <button type = "button" id="number-2" onclick="dodaj('3')" value="3">3</button>
+        <button type="button" id ="operator" onclick="getoperator('+')">+</button>
+        <button type = "button" id="number-2" onclick="dodaj('0')" value="0">0</button>
+        <button type="button" id="dot" onclick="Decimal('.')">.</button>
+        <button type= "button" id= "equal" onclick= "wynik()" value="=">=</button>
+      </div>
+    </div>
+    <input type='button' id='id1' />
+
+
+    <!-- <input class="demo">
+
+<button onclick="myFunction()">Klasa</button>
+
+<input id="demo1">
+
+<button onclick="myFunction1()">Id</button> -->
+
+
+
+
+
+
+
+    <script src="./JavaScript/script.js"></script>  
+  </body>
+</html>
