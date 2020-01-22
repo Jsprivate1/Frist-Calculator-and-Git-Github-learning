@@ -52,7 +52,7 @@ input {
   border-radius: 5px;
   transition: 0.4s;
   border:none; /*  jak długo ma trwać konkretny efekt z hoovera */
-  /* outline:solid green /* zewnętrzna krawędzie  */
+  /* outline:solid green /* oznacza zewnętrzna krawędzie  */
   
 }
 #buttons button:hover {
