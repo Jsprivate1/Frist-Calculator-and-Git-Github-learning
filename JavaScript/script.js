@@ -50,7 +50,7 @@ function getoperator(operand) {
 function Decimal() {
   button = document.getElementById("monitor"); // Add "."
   if (!button.value.includes(".")) {
-    // Can be written like this either (!button.value.includes(".") && button.value != "") CHANGES
+    // Can be written like this either (!button.value.includes(".") && button.value != "") CHANGES2
     if (button.value != "") {
       button.value += ".";
     }
